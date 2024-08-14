@@ -276,7 +276,7 @@ generate_config() {
       "users": [
         {
           "uuid": "$UUID",
-          "password": "admin123"
+          "password": "admin321"
         }
       ],
       "congestion_control": "bbr",
@@ -452,7 +452,7 @@ vmess://$(echo "{ \"v\": \"2\", \"ps\": \"$ISP\", \"add\": \"www.visa.com.sg\", 
 
 hysteria2://$UUID@$IP:$hy2_port/?sni=www.bing.com&alpn=h3&insecure=1#$ISP
 
-tuic://$UUID:admin123@$IP:$tuic_port?sni=www.bing.com&congestion_control=bbr&udp_relay_mode=native&alpn=h3&allow_insecure=1#$ISP
+tuic://$UUID:admin321@$IP:$tuic_port?sni=www.bing.com&congestion_control=bbr&udp_relay_mode=native&alpn=h3&allow_insecure=1#$ISP
 EOF
 cat list.txt
 purple "list.txt saved successfully"
